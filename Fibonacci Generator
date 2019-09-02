@@ -1,0 +1,11 @@
+function fibonacciGenerator (n) {
+    var output = [];
+    for (var i = 1; i <= n; i++){
+        if (i===1 | i===2){
+            var fibonacciNumber = i-1;
+        } else {
+            fibonacciNumber = (output[i - 3] + output[i - 2]);
+    }
+        output.push(fibonacciNumber);
+    }
+    return (output);
